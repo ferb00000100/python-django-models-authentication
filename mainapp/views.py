@@ -31,5 +31,5 @@ def index(request):
 
 
 def post(request, id):
-    get_object_or_404(BlogPost, pk=id)
+    post = get_object_or_404(BlogPost, pk=id)
     return render(request, 'mainapp/post.html', {'object': post})
