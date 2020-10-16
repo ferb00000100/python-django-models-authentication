@@ -24,11 +24,9 @@ ALL_POSTS = [
  },
 ]
 
-
 def index(request):
     posts = BlogPost.objects.all()
     return render(request, 'mainapp/index.html', {'posts':posts})
-
 
 def post(request, id):
     post = get_object_or_404(BlogPost, pk=id)
