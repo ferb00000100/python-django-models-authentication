@@ -1,43 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-	<testsuite name="tests.PostTestCase-20201016190951" tests="10" file="tests.py" time="0.012" timestamp="2020-10-16T19:09:51" failures="0" errors="0" skipped="0">
-		<testcase classname="tests.PostTestCase" name="test_task10_make_migrations" time="0.004" timestamp="2020-10-16T19:09:51" file="module3/tests.py" line="235">
+	<testsuite name="tests.PostTestCase-20201016193841" tests="12" file="tests.py" time="0.018" timestamp="2020-10-16T19:38:42" failures="5" errors="0" skipped="0">
+		<testcase classname="tests.PostTestCase" name="test_task10_uncomment_templates" time="0.004" timestamp="2020-10-16T19:38:41" file="module4/tests.py" line="246">
 			<system-out><![CDATA[]]></system-out>
 			<system-err><![CDATA[]]></system-err>
 		</testcase>
-		<testcase classname="tests.PostTestCase" name="test_task1_post_model_exists" time="0.001" timestamp="2020-10-16T19:09:51" file="module3/tests.py" line="111">
+		<testcase classname="tests.PostTestCase" name="test_task12_make_migrations" time="0.002" timestamp="2020-10-16T19:38:42" file="module4/tests.py" line="282">
 			<system-out><![CDATA[]]></system-out>
 			<system-err><![CDATA[]]></system-err>
 		</testcase>
-		<testcase classname="tests.PostTestCase" name="test_task2_author_exists" time="0.001" timestamp="2020-10-16T19:09:51" file="module3/tests.py" line="120">
+		<testcase classname="tests.PostTestCase" name="test_task1_tag_model_exists" time="0.001" timestamp="2020-10-16T19:38:42" file="module4/tests.py" line="114">
 			<system-out><![CDATA[]]></system-out>
 			<system-err><![CDATA[]]></system-err>
 		</testcase>
-		<testcase classname="tests.PostTestCase" name="test_task3_body_exists" time="0.000" timestamp="2020-10-16T19:09:51" file="module3/tests.py" line="133">
+		<testcase classname="tests.PostTestCase" name="test_task3_str_exists" time="0.001" timestamp="2020-10-16T19:38:42" file="module4/tests.py" line="132">
 			<system-out><![CDATA[]]></system-out>
 			<system-err><![CDATA[]]></system-err>
 		</testcase>
-		<testcase classname="tests.PostTestCase" name="test_task4_postdate_exists" time="0.001" timestamp="2020-10-16T19:09:51" file="module3/tests.py" line="139">
+		<testcase classname="tests.PostTestCase" name="test_task7_tag_view_find_posts" time="0.001" timestamp="2020-10-16T19:38:42" file="module4/tests.py" line="203">
 			<system-out><![CDATA[]]></system-out>
 			<system-err><![CDATA[]]></system-err>
 		</testcase>
-		<testcase classname="tests.PostTestCase" name="test_task5_str_exists" time="0.000" timestamp="2020-10-16T19:09:51" file="module3/tests.py" line="145">
+		<testcase classname="tests.PostTestCase" name="test_task8_add_tag_url" time="0.001" timestamp="2020-10-16T19:38:42" file="module4/tests.py" line="209">
 			<system-out><![CDATA[]]></system-out>
 			<system-err><![CDATA[]]></system-err>
 		</testcase>
-		<testcase classname="tests.PostTestCase" name="test_task6_get_abs_url_exists" time="0.000" timestamp="2020-10-16T19:09:51" file="module3/tests.py" line="148">
+		<testcase classname="tests.PostTestCase" name="test_task9_url_reverser" time="0.001" timestamp="2020-10-16T19:38:42" file="module4/tests.py" line="236">
 			<system-out><![CDATA[]]></system-out>
 			<system-err><![CDATA[]]></system-err>
 		</testcase>
-		<testcase classname="tests.PostTestCase" name="test_task7_register_model_in_admin" time="0.001" timestamp="2020-10-16T19:09:51" file="module3/tests.py" line="151">
+		<testcase classname="tests.PostTestCase" name="test_task11_admin_register_tag" time="0.003" timestamp="2020-10-16T19:38:42" file="module4/tests.py" line="258">
+			<failure type="AssertionError" message="Did you import `Tag`?"><![CDATA[Traceback (most recent call last):
+  File "/Users/jmartin/development/python-django-models-authentication/module4/tests.py", line 279, in test_task11_admin_register_tag
+    self.assertTrue(import_Tag_found, msg="Did you import `Tag`?")
+  File "/Users/jmartin/development/python-django-models-authentication/support/SimplerTestCase.py", line 12, in assertTrue
+    self.fail(msg or (str(expr) + "is not True"))
+AssertionError: Did you import `Tag`?
+]]></failure>
 			<system-out><![CDATA[]]></system-out>
 			<system-err><![CDATA[]]></system-err>
 		</testcase>
-		<testcase classname="tests.PostTestCase" name="test_task8_update_views_with_BlogPost" time="0.002" timestamp="2020-10-16T19:09:51" file="module3/tests.py" line="173">
+		<testcase classname="tests.PostTestCase" name="test_task2_clean_method_exists" time="0.001" timestamp="2020-10-16T19:38:42" file="module4/tests.py" line="125">
+			<failure type="AssertionError" message="Did you assign to `self.name` in the `clean` method?"><![CDATA[Traceback (most recent call last):
+  File "/Users/jmartin/development/python-django-models-authentication/module4/tests.py", line 130, in test_task2_clean_method_exists
+    self.assertTrue(self.clean_assign_found, msg="Did you assign to `self.name` in the `clean` method?")
+  File "/Users/jmartin/development/python-django-models-authentication/support/SimplerTestCase.py", line 12, in assertTrue
+    self.fail(msg or (str(expr) + "is not True"))
+AssertionError: Did you assign to `self.name` in the `clean` method?
+]]></failure>
 			<system-out><![CDATA[]]></system-out>
 			<system-err><![CDATA[]]></system-err>
 		</testcase>
-		<testcase classname="tests.PostTestCase" name="test_task9_update_post_view_with_BlogPost" time="0.001" timestamp="2020-10-16T19:09:51" file="module3/tests.py" line="208">
+		<testcase classname="tests.PostTestCase" name="test_task4_many_to_many_exists" time="0.002" timestamp="2020-10-16T19:38:42" file="module4/tests.py" line="136">
+			<failure type="AssertionError" message="Did you set `tags` equal to the `ManyToManyField`?"><![CDATA[Traceback (most recent call last):
+  File "/Users/jmartin/development/python-django-models-authentication/module4/tests.py", line 139, in test_task4_many_to_many_exists
+    self.assertTrue(self.tag_many_to_many_found, msg="Did you set `tags` equal to the `ManyToManyField`?")
+  File "/Users/jmartin/development/python-django-models-authentication/support/SimplerTestCase.py", line 12, in assertTrue
+    self.fail(msg or (str(expr) + "is not True"))
+AssertionError: Did you set `tags` equal to the `ManyToManyField`?
+]]></failure>
+			<system-out><![CDATA[]]></system-out>
+			<system-err><![CDATA[]]></system-err>
+		</testcase>
+		<testcase classname="tests.PostTestCase" name="test_task5_tag_view" time="0.002" timestamp="2020-10-16T19:38:42" file="module4/tests.py" line="192">
+			<failure type="AssertionError" message="Did you return the result of the `render` function?"><![CDATA[Traceback (most recent call last):
+  File "/Users/jmartin/development/python-django-models-authentication/module4/tests.py", line 196, in test_task5_tag_view
+    self.assertTrue(self.tag_view_return_params_found, msg="Did you return the result of the `render` function?")
+  File "/Users/jmartin/development/python-django-models-authentication/support/SimplerTestCase.py", line 12, in assertTrue
+    self.fail(msg or (str(expr) + "is not True"))
+AssertionError: Did you return the result of the `render` function?
+]]></failure>
+			<system-out><![CDATA[]]></system-out>
+			<system-err><![CDATA[]]></system-err>
+		</testcase>
+		<testcase classname="tests.PostTestCase" name="test_task6_tag_view_title" time="0.001" timestamp="2020-10-16T19:38:42" file="module4/tests.py" line="198">
+			<failure type="AssertionError" message="Did you lowercase `name` in the `tag_post` method?"><![CDATA[Traceback (most recent call last):
+  File "/Users/jmartin/development/python-django-models-authentication/module4/tests.py", line 200, in test_task6_tag_view_title
+    self.assertTrue(self.tag_view_name_assign_found, msg="Did you lowercase `name` in the `tag_post` method?")
+  File "/Users/jmartin/development/python-django-models-authentication/support/SimplerTestCase.py", line 12, in assertTrue
+    self.fail(msg or (str(expr) + "is not True"))
+AssertionError: Did you lowercase `name` in the `tag_post` method?
+]]></failure>
 			<system-out><![CDATA[]]></system-out>
 			<system-err><![CDATA[]]></system-err>
 		</testcase>
